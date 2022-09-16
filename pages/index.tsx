@@ -4,7 +4,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { NextPageWithLayout } from '../models'
-import styles from '../styles/Home.module.css'
+import {HeroSection} from '@/components/home'
 
 const Home: NextPageWithLayout = () => {
   const router = useRouter();
@@ -14,8 +14,9 @@ const Home: NextPageWithLayout = () => {
   }
 
   return (
-    <Box>Home Page</Box>
-
+    <Box>
+      <HeroSection />
+    </Box>
   )
 }
 
