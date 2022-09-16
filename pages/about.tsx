@@ -1,4 +1,5 @@
 import { AdminLayout, MainLayout } from '@/components/layout';
+import { Box, Typography } from '@mui/material';
 import * as React from 'react';
 
 export interface AboutPageProps {
@@ -6,9 +7,9 @@ export interface AboutPageProps {
 
 export default function AboutPage (props: AboutPageProps) {
   return (
-    <div>
-      About Page
-    </div>
+    <Box>
+      <Typography component="h1" variant="h3" color="primary.main">About Page</Typography>
+    </Box>
   );
 }
 
