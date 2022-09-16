@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { LayoutProps } from '@/models/index';
 import { Stack } from '@mui/system';
 import { Footer, Header } from '../common';
-import { Box } from '@mui/material';
+import { Box, Container } from '@mui/material';
 
 export function MainLayout ({children}: LayoutProps) {
   return (
@@ -21,6 +21,9 @@ export function MainLayout ({children}: LayoutProps) {
         <a>Works</a>
       </Link>
       <Box component="main" flexGrow="1">
+        <Container maxWidth="sm" sx={{bgcolor: 'primary.main'}}>SM CONTAINER</Container>
+        <Container sx={{bgcolor: 'primary.main'}}>MD CONTAINER</Container>
+
         {children}
       </Box>
       <Footer />
