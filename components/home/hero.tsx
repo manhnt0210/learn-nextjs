@@ -6,9 +6,9 @@ import Image from 'next/image';
 
 export function HeroSection () {
   return (
-    <Box component="section" pt={18} pb={9}>
+    <Box component="section" pt={{xs: 4, md: 18}} pb={{xs: 7, md: 9}}>
       <Container>
-        <Stack spacing={8} direction="row" alignItems="flex-start">
+        <Stack spacing={8} direction={{md: "row", xs: "column-reverse"}} alignItems={{md: "flex-start", xs: "center"}}>
           <Box>
             <Typography component="h1" variant="h3" fontWeight="bold">Hi, I am John, <br />Creative Technologist</Typography>
 
