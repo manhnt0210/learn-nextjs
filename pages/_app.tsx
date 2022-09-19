@@ -1,12 +1,12 @@
 import '../styles/globals.css'
 import { EmptyLayout, AdminLayout, MainLayout } from '@/components/layout'
-import { AppPropsWithLayout } from '@/models/index'
+import { AppPropsWithLayout } from '@/models'
 import { SWRConfig } from 'swr'
 import axiosClient from '@/api/axios-client'
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { CacheProvider, EmotionCache } from '@emotion/react';
-import { createEmotionCache, theme } from '../utils/index';
+import { createEmotionCache, theme } from '@/utils';
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
