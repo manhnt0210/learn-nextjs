@@ -28,6 +28,7 @@ export async function getPostList(): Promise<Post[]> {
       tagList: data.tags,
       publishedDate: "2022-06-15T03:00:00Z",
       description: excerpt || '',
+      thumbnailUrl: data.image,
 
       mdContent: content,
     })

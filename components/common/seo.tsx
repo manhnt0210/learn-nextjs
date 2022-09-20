@@ -15,7 +15,7 @@ export function Seo ({ data }: SeoProps) {
   return (
     <Head>
       {/* <!-- Primary Meta Tags --> */}
-      <title>NextJS Tutorial | Manhnt0210</title>
+      <title>{data.title}</title>
       <meta name="title" content={data.title} />
       <meta name="description" content={data.description} />
 
