@@ -1,5 +1,4 @@
-import * as React from 'react';
-import { Stack, Box, Typography, Chip } from '@mui/material'; 
+import { Box, Stack, Typography } from '@mui/material';
 
 export function Footer() {
   return (

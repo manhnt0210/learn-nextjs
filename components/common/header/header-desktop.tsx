@@ -1,10 +1,9 @@
 import { Box, Link as MuiLink } from '@mui/material';
 import { Container, Stack } from '@mui/system';
+import clsx from 'clsx';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import * as React from 'react';
-import clsx from 'clsx'
-import {ROUTE_LIST} from './routes'
+import { ROUTE_LIST } from './routes';
 
 export interface HeaderDesktopProps {
 }

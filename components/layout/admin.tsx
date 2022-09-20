@@ -1,6 +1,5 @@
-import * as React from 'react';
-import Link from 'next/link';
 import { LayoutProps } from '@/models';
+import Link from 'next/link';
 
 export function AdminLayout ({children}: LayoutProps) {
   return (

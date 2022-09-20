@@ -1,8 +1,7 @@
 import { Post } from '@/models';
-import { Box, Typography, Link as MuiLink, Card } from '@mui/material';
+import { Box, Link as MuiLink, Typography } from '@mui/material';
 import { Container, Stack } from '@mui/system';
 import Link from 'next/link';
-import * as React from 'react';
 import { PostCard } from './post-card';
 
 
@@ -11,6 +10,7 @@ export function RecentPosts () {
   const postList: Post[] = [
     {
       id: 1,
+      slug: '',
       title: 'Making a design system',
       publishedDate: '1663558819597',
       tagList: ['Design', 'Pattern'],
@@ -18,6 +18,7 @@ export function RecentPosts () {
     },
     {
       id: 2,
+      slug: '',
       title: 'Creating pixel perfect',
       publishedDate: '1663558819597',
       tagList: ['Figma', 'Icon Design'],

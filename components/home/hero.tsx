@@ -1,7 +1,6 @@
+import avatar from '@/images/avatar.png';
 import { Box, Button, Typography } from '@mui/material';
 import { Container, Stack } from '@mui/system';
-import * as React from 'react';
-import avatar from '@/images/avatar.png'
 import Image from 'next/image';
 
 export function HeroSection () {

@@ -1,9 +1,7 @@
-import * as React from 'react';
-import Link from 'next/link';
 import { LayoutProps } from '@/models';
+import { Box } from '@mui/material';
 import { Stack } from '@mui/system';
 import { Footer, Header } from '../common';
-import { Box, Container } from '@mui/material';
 
 export function MainLayout ({children}: LayoutProps) {
   return (
